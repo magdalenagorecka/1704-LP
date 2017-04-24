@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"$color-primary: #00bcd4;\n$color-secondary: #ff00dd;\n\n/******** MOBILE ************/\n\nbody{\n\n}\n\n/******* Headings *************/\nh1{\n  color:$color-primary;\n}\n\n\n/********** 480px ***********/\n@media screen and (min-width:480px) {\n  h1{\n    font-size:1.5em;\n  }\n}\n\n/*********** 768px ***********/\n@media screen and (min-width:768px) {\n  h1{\n    font-size:1.75em;\n  }\n}\n/*********** 1024px ***********/\n@media screen and (min-width:1024px) {\n  h1{\n    font-size:2em;\n  }\n}\n/************ 1200px **********/\n@media screen and (min-width:1200px) {\n  h1{\n    font-size:2.5em;\n  }\n}\n"
+	],
+	"mappings": "AAGA,8BAA8B;AAM9B,gCAAgC;;AAChC,AAAA,EAAE,CAAA;EACA,KAAK,EAXS,OAAO;CAYtB;;AAGD,8BAA8B;AAC9B,MAAM,CAAN,MAAM,MAAM,SAAS,EAAE,KAAK;;EAC1B,AAAA,EAAE,CAAA;IACA,SAAS,EAAC,KAAM;GACjB;;;AAGH,+BAA+B;AAC/B,MAAM,CAAN,MAAM,MAAM,SAAS,EAAE,KAAK;;EAC1B,AAAA,EAAE,CAAA;IACA,SAAS,EAAC,MAAO;GAClB;;;AAEH,gCAAgC;AAChC,MAAM,CAAN,MAAM,MAAM,SAAS,EAAE,MAAM;;EAC3B,AAAA,EAAE,CAAA;IACA,SAAS,EAAC,GAAI;GACf;;;AAEH,gCAAgC;AAChC,MAAM,CAAN,MAAM,MAAM,SAAS,EAAE,MAAM;;EAC3B,AAAA,EAAE,CAAA;IACA,SAAS,EAAC,KAAM;GACjB",
+	"names": []
+}

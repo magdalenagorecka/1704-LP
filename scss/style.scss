@@ -1,0 +1,40 @@
+$color-primary: #00bcd4;
+$color-secondary: #ff00dd;
+
+/******** MOBILE ************/
+
+body{
+
+}
+
+/******* Headings *************/
+h1{
+  color:$color-primary;
+}
+
+
+/********** 480px ***********/
+@media screen and (min-width:480px) {
+  h1{
+    font-size:1.5em;
+  }
+}
+
+/*********** 768px ***********/
+@media screen and (min-width:768px) {
+  h1{
+    font-size:1.75em;
+  }
+}
+/*********** 1024px ***********/
+@media screen and (min-width:1024px) {
+  h1{
+    font-size:2em;
+  }
+}
+/************ 1200px **********/
+@media screen and (min-width:1200px) {
+  h1{
+    font-size:2.5em;
+  }
+}
