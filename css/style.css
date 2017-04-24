@@ -1,13 +1,123 @@
-/******** MOBILE ************/
-/******* Headings *************/
-/* line 11, /Users/magdalenagorecka/Desktop/portfolio dev/projekt 1/scss/style.scss */
-h1 {
-  color: #00bcd4;
+/**** ZMIENNE ****/
+/******** MAIN ************/
+/* line 14, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* line 20, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  color: #343434;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  line-height: 2em;
+}
+
+/* line 29, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+header {
+  height: 460px;
+  background: linear-gradient(#74D8E8, #FF66F0), url("../img/bg3.jpg") no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 35, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+header::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  transform: skewY(-2deg);
+  background-color: #fff;
+  bottom: -25px;
+}
+
+/* line 46, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+.header-inner {
+  padding: 0.5em 1em;
+}
+
+/******** Nav *****************/
+/* line 51, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+.main-nav {
+  padding-top: 10px;
+}
+
+/* line 53, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+.main-nav li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+/* line 58, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+.main-nav a {
+  color: #fff;
+  font-size: 0.95em;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+/* line 67, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+ul {
+  list-style-type: none;
+}
+
+/******* Headings *************/
+/* line 72, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+h1 {
+  padding-top: 20px;
+  color: #fff;
+}
+
+/* line 77, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+h2 {
+  color: #ffcc66;
+}
+
+/***** SECTION *****/
+/* line 83, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+section {
+  max-width: 1000px;
+}
+
+/* line 90, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+/***** FOOTER ******/
+/* line 97, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+footer {
+  padding: 2em 0 0;
+  height: 100px;
+  background-color: #FF66F0;
+  margin-top: 3.5em;
+  position: relative;
+}
+
+/* line 103, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+footer::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  transform: skewY(2deg);
+  background-color: #FF66F0;
+  top: -25px;
+}
+
+/* MEDIA QUERIES ************************/
 /********** 480px ***********/
 @media screen and (min-width: 480px) {
-  /* line 18, /Users/magdalenagorecka/Desktop/portfolio dev/projekt 1/scss/style.scss */
+  /* line 118, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
   h1 {
     font-size: 1.5em;
   }
@@ -15,25 +125,19 @@ h1 {
 
 /*********** 768px ***********/
 @media screen and (min-width: 768px) {
-  /* line 25, /Users/magdalenagorecka/Desktop/portfolio dev/projekt 1/scss/style.scss */
+  /* line 125, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
   h1 {
     font-size: 1.75em;
   }
 }
 
-/*********** 1024px ***********/
-@media screen and (min-width: 1024px) {
-  /* line 31, /Users/magdalenagorecka/Desktop/portfolio dev/projekt 1/scss/style.scss */
+/*********** 992px ***********/
+@media screen and (min-width: 992px) {
+  /* line 131, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
   h1 {
-    font-size: 2em;
-  }
-}
-
-/************ 1200px **********/
-@media screen and (min-width: 1200px) {
-  /* line 37, /Users/magdalenagorecka/Desktop/portfolio dev/projekt 1/scss/style.scss */
-  h1 {
-    font-size: 2.5em;
+    font-size: 4em;
+    padding-top: 100px;
+    padding-bottom: 40px;
   }
 }
 
