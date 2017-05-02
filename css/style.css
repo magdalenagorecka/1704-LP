@@ -84,14 +84,13 @@ h1 {
   padding-top: 40px;
   padding-bottom: 40px;
   color: #fff;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
 }
 
 @media screen and (min-width: 576px) {
   /* line 67, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
   h1 {
     font-size: 3em;
-    color: red;
     padding-top: 60px;
   }
 }
@@ -100,7 +99,6 @@ h1 {
   /* line 67, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
   h1 {
     font-size: 3.5em;
-    color: aqua;
     padding-top: 80px;
   }
 }
@@ -108,40 +106,58 @@ h1 {
 @media screen and (min-width: 992px) {
   /* line 67, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
   h1 {
-    color: lime;
     font-size: 4em;
     padding-top: 100px;
   }
 }
 
-/* line 89, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 86, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 h2 {
-  color: #ffcc66;
+  color: #97ECFF;
+  font-family: 'Raleway', sans-serif;
 }
 
 /***** SECTION *****/
-/* line 96, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
-section {
-  max-width: 1000px;
+/* line 97, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+.content {
+  margin-top: 50px;
+  height: 300px;
 }
 
-/* line 103, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 102, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+.content2 {
+  margin-top: 50px;
+  height: 400px;
+  background: linear-gradient(#74D8E8, #655884), url("../img/bg3.jpg") no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  padding: 100px 0;
+  transform: skew(0deg, -4deg);
+}
+
+/* line 111, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+.cont-inner {
+  padding: 150px 150px;
+  transform: skew(0deg, 4deg);
+}
+
+/* line 115, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 .card {
   display: flex;
   flex-direction: column;
 }
 
 /***** FOOTER ******/
-/* line 111, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 123, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 footer {
   padding: 2em 0 0;
   height: 100px;
-  background-color: #FF66F0;
+  background-color: #655884;
   margin-top: 3.5em;
   position: relative;
 }
 
-/* line 117, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 129, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 footer::before {
   content: '';
   display: block;
@@ -149,7 +165,6 @@ footer::before {
   height: 50px;
   position: absolute;
   transform: skewY(2deg);
-  background-color: #FF66F0;
   top: -25px;
 }
 

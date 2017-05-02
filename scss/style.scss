@@ -71,16 +71,13 @@ h1{
   font-family:$font-h;
   @media screen and (min-width:$break-s){
       font-size:3em;
-      color:red;
       padding-top:60px;
     }
   @media screen and (min-width:$break-m) {
       font-size:3.5em;
-      color:aqua;
       padding-top: 80px;
     }
   @media screen and (min-width:$break-l) {
-      color:lime;
       font-size:4em;
       padding-top: 100px;
     }
@@ -88,18 +85,33 @@ h1{
 
 h2{
   color:$color-secondary;
+  font-family: 'Raleway', sans-serif;
 
 }
 
 /***** SECTION *****/
 
 section{
-  max-width:1000px;
 }
 
-.col2{
+.content{
+  margin-top: 50px;
+  height: 300px;
+  }// end &-2
 
-}
+.content2{
+    margin-top: 50px;
+    height: 400px;
+    background: linear-gradient($color-bg-light, $color-bg-bottom), url('../img/bg3.jpg') no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding: 100px 0;
+    transform: skew(0deg,-4deg);
+    }// end &-2
+.cont-inner{
+    padding: 150px 150px;
+    transform: skew(0deg,4deg);
+  }
 .card{
    display:flex;
    flex-direction: column;
@@ -111,7 +123,7 @@ section{
 footer{
   padding: 2em 0 0;
   height: 100px;
-  background-color: $color-bg;
+  background-color: $color-bg-bottom;
   margin-top: 3.5em;
   position: relative;
   &::before {
@@ -121,7 +133,6 @@ footer{
     height: 50px;
     position: absolute;
     transform: skewY(2deg);
-    background-color: $color-bg;
     top: -25px;
   }
 }
