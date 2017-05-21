@@ -1,32 +1,38 @@
 /**** ZMIENNE ****/
+/* line 5, /Users/magdalenagorecka/GitHub/1704-LP/scss/utilities/_function.scss */
+.test {
+  width: 33.33333%;
+}
+
 /******** MAIN ************/
-/* line 5, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 6, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* line 11, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 12, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 body {
   margin: 0;
   padding: 0;
   color: #343434;
   font-family: "Raleway", sans-serif;
   text-align: center;
-  line-height: 2em;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
-/* line 20, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 22, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 header {
-  height: 500px;
+  height: 460px;
   background: linear-gradient(#74D8E8, #FF66F0), url("../img/bg3.jpg") no-repeat;
   background-blend-mode: multiply;
   background-size: cover;
   position: relative;
 }
 
-/* line 26, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 28, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 header::after {
   content: '';
   display: block;
@@ -34,52 +40,67 @@ header::after {
   height: 100px;
   position: absolute;
   transform: skewY(-4deg);
-  background-color: #fff;
+  background-color: #ffffff;
   bottom: -50px;
 }
 
-/* line 36, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+@media screen and (min-width: 768px) {
+  /* line 22, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+  header {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 22, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+  header {
+    height: 550px;
+  }
+}
+
+/* line 46, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 header p {
   color: #fff;
 }
 
-/* line 40, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 50, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 .header-inner {
   padding: 0.5em 1em;
 }
 
 /******** Nav *****************/
-/* line 45, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 55, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 .main-nav {
+  background-color: #000000;
   padding-top: 10px;
 }
 
-/* line 47, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 58, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 .main-nav li {
   display: inline-block;
   margin: 0 0.5em;
 }
 
-/* line 52, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 63, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 .main-nav a {
-  color: #fff;
+  color: #ffffff;
   font-size: 0.95em;
   text-decoration: none;
   font-weight: 300;
 }
 
-/* line 58, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 69, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 .main-nav img {
   padding-top: 10px;
 }
 
-/* line 62, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 73, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 ul {
   list-style-type: none;
 }
 
 /******* Headings *************/
-/* line 67, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 78, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 h1 {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -88,7 +109,7 @@ h1 {
 }
 
 @media screen and (min-width: 576px) {
-  /* line 67, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+  /* line 78, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
   h1 {
     font-size: 3em;
     padding-top: 60px;
@@ -96,7 +117,7 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 67, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+  /* line 78, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
   h1 {
     font-size: 3.5em;
     padding-top: 80px;
@@ -104,27 +125,39 @@ h1 {
 }
 
 @media screen and (min-width: 992px) {
-  /* line 67, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+  /* line 78, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
   h1 {
     font-size: 4em;
     padding-top: 100px;
   }
 }
 
-/* line 86, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 97, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 h2 {
   color: #97ECFF;
   font-family: 'Raleway', sans-serif;
 }
 
+/* line 101, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+button {
+  font-family: "Open Sans", serif;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: #db167c;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: 0px #fff solid;
+  border-radius: 6px;
+}
+
 /***** SECTION *****/
-/* line 97, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 118, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 .content {
   margin-top: 50px;
   height: 300px;
 }
 
-/* line 102, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 123, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 .content2 {
   margin-top: 50px;
   height: 400px;
@@ -135,29 +168,73 @@ h2 {
   transform: skew(0deg, -4deg);
 }
 
-/* line 111, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 132, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 .cont-inner {
-  padding: 150px 150px;
+  padding: 4%;
   transform: skew(0deg, 4deg);
 }
 
-/* line 115, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
-.card {
+/* line 137, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+.card-holder {
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+/* line 144, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+.card {
+  padding: 10px;
+}
+
+/****** FEAT *********/
+/* line 152, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+.feat {
+  transform: skew(0deg, -4deg);
+}
+
+/* line 156, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+.box-1 {
+  background-color: #db165b;
+}
+
+/* line 156, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+.box-2 {
+  background-color: #db163a;
+}
+
+/* line 156, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+.box-3 {
+  background-color: #db161a;
+}
+
+/****** PRESS ********/
+/* line 161, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+.press {
+  min-height: 460px;
+  background-color: black;
+  color: #ffffff;
+  transform: skew(0deg, -4deg);
+}
+
+/******* CTA ********/
+/* line 169, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+.cta {
+  padding: 20px 0;
 }
 
 /***** FOOTER ******/
-/* line 123, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 174, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 footer {
-  padding: 2em 0 0;
+  padding: 1.7em 0 1.7em 0;
   height: 100px;
-  background-color: #655884;
+  background-color: #ffffff;
   margin-top: 3.5em;
   position: relative;
 }
 
-/* line 129, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
+/* line 180, /Users/magdalenagorecka/GitHub/1704-LP/scss/style.scss */
 footer::before {
   content: '';
   display: block;
@@ -167,10 +244,5 @@ footer::before {
   transform: skewY(2deg);
   top: -25px;
 }
-
-/* MEDIA QUERIES ************************/
-/********** 480px ***********/
-/*********** 768px ***********/
-/*********** 992px ***********/
 
 /*# sourceMappingURL=../css/style.map */

@@ -1,6 +1,7 @@
 
 //Partial import
-@import 'partials/var';
+@import 'partials/var', 'utilities/function.scss';
+
 /******** MAIN ************/
 * {
   margin:0;
@@ -14,16 +15,17 @@ body{
   color: #343434;
   font-family: "Raleway", sans-serif;
   text-align: center;
-  line-height: 2em;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 header {
-  height: 500px;
+  height: 460px;
   background: linear-gradient($color-bg-light, $color-bg), url('../img/bg3.jpg') no-repeat;
   background-blend-mode: multiply;
   background-size: cover;
   position: relative;
-  &::after {
+ &::after {
     content: '';
     display: block;
     width: 100%;
@@ -33,6 +35,14 @@ header {
     background-color: $white;
     bottom: -50px;
   }
+  @media screen and (min-width:$break-s){
+    }
+  @media screen and (min-width:$break-m) {
+      height:500px;
+    }
+  @media screen and (min-width:$break-l) {
+      height:550px;
+    }
   p{
     color:#fff;
   }
@@ -43,6 +53,7 @@ header {
 
 /******** Nav *****************/
 .main-nav{
+  background-color: #000000;
   padding-top: 10px;
   li{
     display: inline-block;
@@ -86,18 +97,28 @@ h1{
 h2{
   color:$color-secondary;
   font-family: 'Raleway', sans-serif;
-
+}
+button{
+  font-family: $font-h;
+  font-size:1em;
+  font-weight:600;
+  background-color: $color-accent;
+  color:$white;
+  padding:15px 30px;
+  border:0px #fff solid;
+  border-radius: 6px;
 }
 
 /***** SECTION *****/
 
 section{
+
 }
 
 .content{
   margin-top: 50px;
   height: 300px;
-  }// end &-2
+  }
 
 .content2{
     margin-top: 50px;
@@ -107,23 +128,53 @@ section{
     background-size: cover;
     padding: 100px 0;
     transform: skew(0deg,-4deg);
-    }// end &-2
+    }
 .cont-inner{
-    padding: 150px 150px;
+
+    padding: 4%;
     transform: skew(0deg,4deg);
   }
+  .card-holder{
+    padding-top:20px;
+    padding-bottom:20px;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-around;
+  }
 .card{
-   display:flex;
-   flex-direction: column;
+   padding:10px;
+   @media screen and (min-width:$break-m) {
+
+     }
+
+}
+/****** FEAT *********/
+.feat{
+  transform: skew(0deg,-4deg);
+}
+@for $i from 1 through 3{
+  .box-#{$i}{
+    background-color: adjust-hue(#db167c, $i*10);
+  }
+}
+/****** PRESS ********/
+.press{
+  min-height:460px;
+  background-color: black;
+  color:$white;
+  transform: skew(0deg,-4deg);
 }
 
-
+/******* CTA ********/
+.cta{
+  padding:20px 0;
+}
 
 /***** FOOTER ******/
 footer{
-  padding: 2em 0 0;
+  padding: 1.7em 0 1.7em 0;
   height: 100px;
-  background-color: $color-bg-bottom;
+  background-color: $white;
   margin-top: 3.5em;
   position: relative;
   &::before {
@@ -136,11 +187,3 @@ footer{
     top: -25px;
   }
 }
-
-/* MEDIA QUERIES ************************/
-/********** 480px ***********/
-
-
-/*********** 768px ***********/
-
-/*********** 992px ***********/
