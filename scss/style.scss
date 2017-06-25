@@ -1,6 +1,6 @@
 
 //Partial import
-@import 'partials/var', 'partials/photo', 'utilities/function.scss';
+@import 'partials/var', 'partials/photo', 'partials/about', 'utilities/function.scss';
 
 /******** MAIN ************/
 * {
@@ -35,6 +35,9 @@ header {
   perspective: 1px;
   a{
     color:white;
+    &:hover{
+      color: lighten($color-primary, 20%);
+    }
   }
  &::after {
     content: '';
@@ -210,12 +213,12 @@ h4{
 }
 .button{
   font-size:1em;
-  background-color: $color-accent;
   color:$white;
   padding:15px 30px;
-  border:0px #fff solid;
+  border:2px #fff solid;
   border-radius: 6px;
   margin-bottom:20px;
+  text-decoration: none;
 }
 
 /***** SECTION *****/
@@ -255,7 +258,12 @@ section{
       background-position: 50% 50%;
   }
 .content3{
-    background: /*linear-gradient($color-bg-light, $color-bg-bottom), */url('../img/bg7.png') no-repeat;
+    /*background: /*linear-gradient($color-bg-light, $color-bg-bottom), url('../img/bg7.png') no-repeat;*/
+    background: url('../img/bg7.png') no-repeat; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, $color-bg-light, $color-bg), url('../img/bg7.png') no-repeat;/* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, $color-bg-light, $color-bg),url('../img/bg7.png') no-repeat; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, $color-bg-light, $color-bg), url('../img/bg7.png') no-repeat; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left top, $color-bg-light, $color-bg), url('../img/bg7.png') no-repeat; /* Standard syntax */
       background-position: 50% 50%;
     h3{
       color:white;
