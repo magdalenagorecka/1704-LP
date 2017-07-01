@@ -1,0 +1,27 @@
+form{
+  padding-top:30px;
+}
+input{
+  border-bottom: 1px solid $color-primary;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-right: 30px;
+
+}
+
+textarea:focus, input:focus{
+  border: 2px solid $color-primary;
+}
+button {
+  padding: 5px 25px;
+  border:1px solid $color-primary;
+  background-color: inherit;
+  border-radius: 6px;
+  font-size: 1em;
+  font-family: 'Raleway';
+  &:hover{
+    background-color: $color-primary;
+    color:white;
+  }
+}
