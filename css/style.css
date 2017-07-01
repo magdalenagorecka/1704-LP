@@ -122,13 +122,84 @@
   display: none;
 }
 
-#about-1 h3, #about-2 h3 {
+.header-about {
+  min-height: 400px;
+  background: url("../img/bg5.png") no-repeat;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, MidnightBlue, Crimson), url("../img/bg5.png") no-repeat;
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, MidnightBlue, Crimson), url("../img/bg5.png") no-repeat;
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, MidnightBlue, Crimson), url("../img/bg5.png") no-repeat;
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(left top, MidnightBlue, Crimson), url("../img/bg5.png") no-repeat;
+  /* Standard syntax */
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  position: relative;
+  perspective: 1px;
+}
+
+.header-about a {
+  color: white;
+}
+
+.header-about a:hover {
+  color: #91238d;
+}
+
+.header-about::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  transform: skewY(-4deg);
+  background-color: #ffffff;
+  bottom: -50px;
+}
+
+@media screen and (min-width: 576px) {
+  .header-about {
+    height: 420px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-about {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header-about {
+    height: 700px;
+  }
+}
+
+.header-about p {
+  color: #fff;
+}
+
+#about-1 h3,
+#about-2 h3 {
   color: #3f0f3d;
   font-weight: bold;
 }
 
-#about-1 p, #about-2 p {
+#about-1 p,
+#about-2 p {
   padding: 10px 0 0;
+}
+
+#about-1 {
+  padding: 3em 0 2em;
+}
+
+#about-2 {
+  padding: 5em 0 2em;
 }
 
 form {
@@ -253,7 +324,7 @@ header p {
 }
 
 .header-inner {
-  height: 600px;
+  min-height: 400px;
 }
 
 .parallax {
@@ -282,6 +353,15 @@ header p {
 /******** Nav *****************/
 nav {
   background-color: #000000;
+}
+
+.sticky.is-sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -429,10 +509,6 @@ h4 {
 }
 
 /***** SECTION *****/
-section {
-  padding-top: 5em;
-}
-
 #projekty h2 {
   color: white;
 }
@@ -565,7 +641,7 @@ section {
 
 /******* CTA ********/
 .cta {
-  padding-bottom: 7em;
+  padding: 6em 2em 7em;
   text-align: center;
 }
 
@@ -587,4 +663,28 @@ footer {
 .copy {
   font-size: 0.7em;
   margin-top: 10px;
+}
+
+/*** btn ***/
+#myBtn {
+  width: 50px;
+  height: 50px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: 2px solid #3f0f3d;
+  color: #3f0f3d;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+#myBtn:hover {
+  color: white;
+  border-color: white;
 }

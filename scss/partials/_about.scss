@@ -1,4 +1,47 @@
-#about-1, #about-2{
+.header-about {
+  min-height:400px;
+  background: url('../img/bg5.png') no-repeat; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, $color-bg-light, $color-bg), url('../img/bg5.png') no-repeat;/* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, $color-bg-light, $color-bg),url('../img/bg5.png') no-repeat; /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, $color-bg-light, $color-bg), url('../img/bg5.png') no-repeat; /* For Firefox 3.6 to 15 */
+  background: linear-gradient(left top, $color-bg-light, $color-bg), url('../img/bg5.png') no-repeat; /* Standard syntax */
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  position: relative;
+  perspective: 1px;
+  a{
+    color:white;
+    &:hover{
+      color: lighten($color-primary, 20%);
+    }
+  }
+ &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    transform: skewY(-4deg);
+    background-color: $white;
+    bottom: -50px;
+  }
+  @media screen and (min-width:$break-s){
+    height:420px;
+    }
+  @media screen and (min-width:$break-m) {
+      height:600px;
+    }
+  @media screen and (min-width:$break-l) {
+      height:700px;
+    }
+  p{
+    color:#fff;
+  }
+}
+#about-1,
+#about-2{
   h3{
     color:$color-primary;
     font-weight: bold;
@@ -6,4 +49,10 @@
   p{
   padding: 10px 0 0;
   }
+}
+#about-1{
+  padding:3em 0 2em;
+}
+#about-2{
+  padding:5em 0 2em;
 }

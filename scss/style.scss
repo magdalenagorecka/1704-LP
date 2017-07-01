@@ -71,7 +71,8 @@ header {
   perspective: 1px;
 }
 .header-inner{
-  height: 600px;
+  min-height: 400px;
+
 }
 .parallax{
   position: absolute;
@@ -96,6 +97,14 @@ header {
 /******** Nav *****************/
 nav{
     background-color: #000000;
+}
+.sticky.is-sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -160,7 +169,7 @@ h1{
       font-size: 7em;
       line-height: 1em;
       padding-top: 20px;
-    
+
     }
 }
 
@@ -222,12 +231,6 @@ h4{
 }
 
 /***** SECTION *****/
-section{
-
-  padding-top: 5em;
-}
-
-
 #projekty{
   h2{
     color:white;
@@ -339,7 +342,7 @@ section{
 
 /******* CTA ********/
 .cta{
-    padding-bottom: 7em;
+    padding:6em 2em 7em;
     text-align: center;
     img{
       width:40px;
@@ -359,4 +362,28 @@ footer{
 .copy{
   font-size:0.7em;
   margin-top:10px;
+}
+
+
+/*** btn ***/
+#myBtn {
+  width:50px;
+  height:50px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border:2px solid $color-primary;
+  color: $color-primary;
+  background-color: rgba(255,255,255,0);
+  cursor: pointer;
+  padding: 10px;
+  border-radius:50%;
+  -moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+  &:hover{
+    color:white;
+    border-color: white;
+  }
 }
