@@ -124,6 +124,7 @@
 
 .header-about {
   min-height: 400px;
+  width: 100%;
   background: url("../img/bg5.png") no-repeat;
   /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left top, MidnightBlue, Crimson), url("../img/bg5.png") no-repeat;
@@ -255,6 +256,7 @@ body {
 /** HEADER *************/
 header {
   min-height: 600px;
+  width: 100%;
   background: url("../img/bg3b.jpg") no-repeat;
   /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left top, MidnightBlue, Crimson), url("../img/bg3b.jpg") no-repeat;

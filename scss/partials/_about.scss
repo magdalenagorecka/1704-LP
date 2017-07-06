@@ -1,5 +1,6 @@
 .header-about {
   min-height:400px;
+  width:100%;
   background: url('../img/bg5.png') no-repeat; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left top, $color-bg-light, $color-bg), url('../img/bg5.png') no-repeat;/* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(bottom right, $color-bg-light, $color-bg),url('../img/bg5.png') no-repeat; /* For Opera 11.1 to 12.0 */
